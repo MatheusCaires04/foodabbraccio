@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* MENU */
+.menu > span {
+  @apply duration-300;
+}
+
+.none.active {
+  display: none;
+}
+
+.close1.active {
+  transform: rotate(45deg) translateY(5px);
+}
+
+.close2.active {
+  transform: rotate(-45deg) translateY(-5px);
+}
+
+/* SWIPER BUTTON */
+.swiper-button-next,
+.swiper-button-prev {
+  top: auto;
+  bottom: 2rem;
+  z-index: 100;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: white;
+  font-size: 2rem;
+}
+
+.swiper-button-next {
+  left: auto;
+  right: 8rem;
+}
+.swiper-button-prev {
+  left: auto;
+  right: 10rem;
+}
