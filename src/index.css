@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* GLOBAL */
+/* .swiper-slide-active > img,
+.swiper-slide-active > video {
+  height: 100%;
+} */
+
 /* MENU */
 .menu > span {
   @apply duration-300;

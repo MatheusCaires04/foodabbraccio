@@ -19,7 +19,11 @@ const Banners = () => {
       {dataBanner.map((banner, index) => {
         return (
           <SwiperSlide key={index}>
-            <img src={banner.url} alt="" />
+            <img
+              src={banner.url}
+              alt=""
+              className="h-full w-full object-cover "
+            />
           </SwiperSlide>
         );
       })}
