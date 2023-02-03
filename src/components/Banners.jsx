@@ -1,9 +1,10 @@
 import React from "react";
-import { Navigation } from "swiper";
+import { Navigation, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/autoplay ";
 
 import { dataBanner } from "./DataBanner";
 
@@ -11,9 +12,10 @@ const Banners = () => {
   return (
     <Swiper
       slidesPerView={1}
-      modules={[Navigation]}
+      modules={[Navigation, Autoplay]}
       navigation
       loop={true}
+      autoplay={true}
       className="h-full relative"
     >
       {dataBanner.map((banner, index) => {
